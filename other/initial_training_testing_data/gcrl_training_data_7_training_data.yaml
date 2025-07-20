@@ -1,0 +1,269 @@
+action_episode_7_timestep_0: 41
+action_episode_7_timestep_1: 20
+action_episode_7_timestep_2: 52
+action_episode_7_timestep_3: 23
+action_episode_7_timestep_4: 57
+action_episode_7_timestep_5: 30
+action_episode_7_timestep_6: 5
+action_episode_7_timestep_7: 35
+goal_id_episode_7_timestep_0: 0
+goal_id_episode_7_timestep_1: 0
+goal_id_episode_7_timestep_2: 0
+goal_id_episode_7_timestep_3: 0
+goal_id_episode_7_timestep_4: 0
+goal_id_episode_7_timestep_5: 0
+goal_id_episode_7_timestep_6: 0
+goal_id_episode_7_timestep_7: 0
+navigation_gesture_headmovement_volume_episode_(0, 6, 0, 8)_timestep_7: !!python/tuple
+- 0
+- 6
+- 0
+- 8
+navigation_gesture_headmovement_volume_episode_(1, 5, 0, 7)_timestep_6: !!python/tuple
+- 1
+- 5
+- 0
+- 7
+navigation_gesture_headmovement_volume_episode_(2, 5, 1, 6)_timestep_5: !!python/tuple
+- 2
+- 5
+- 1
+- 6
+navigation_gesture_headmovement_volume_episode_(3, 5, 1, 7)_timestep_4: !!python/tuple
+- 3
+- 5
+- 1
+- 7
+navigation_gesture_headmovement_volume_episode_(4, 4, 1, 7)_timestep_1: !!python/tuple
+- 4
+- 4
+- 1
+- 7
+navigation_gesture_headmovement_volume_episode_(4, 5, 0, 8)_timestep_3: !!python/tuple
+- 4
+- 5
+- 0
+- 8
+navigation_gesture_headmovement_volume_episode_(4, 5, 1, 7)_timestep_2: !!python/tuple
+- 4
+- 5
+- 1
+- 7
+navigation_gesture_headmovement_volume_episode_(4, 5, 2, 6)_timestep_0: !!python/tuple
+- 4
+- 5
+- 2
+- 6
+nextstate_episode_7_timestep_0:
+  gaze: 0
+  gesture_level: &id002 !!python/object/apply:numpy.core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args:
+    - i8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    BQAAAAAAAAA=
+  head_position: &id003 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AgAAAAAAAAA=
+  navigation: &id004 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AgAAAAAAAAA=
+  volume_level: &id005 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BgAAAAAAAAA=
+nextstate_episode_7_timestep_1:
+  gaze: 0
+  gesture_level: &id006 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+  head_position: &id007 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  navigation: &id008 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AwAAAAAAAAA=
+  volume_level: &id009 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BwAAAAAAAAA=
+nextstate_episode_7_timestep_2:
+  gaze: 0
+  gesture_level: &id010 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BQAAAAAAAAA=
+  head_position: &id011 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  navigation: &id012 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+  volume_level: &id013 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BwAAAAAAAAA=
+nextstate_episode_7_timestep_3:
+  gaze: 0
+  gesture_level: &id014 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BQAAAAAAAAA=
+  head_position: &id015 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  navigation: &id016 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+  volume_level: &id017 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    CAAAAAAAAAA=
+nextstate_episode_7_timestep_4:
+  gaze: 0
+  gesture_level: &id018 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BQAAAAAAAAA=
+  head_position: &id019 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  navigation: &id020 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AwAAAAAAAAA=
+  volume_level: &id021 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BwAAAAAAAAA=
+nextstate_episode_7_timestep_5:
+  gaze: 1
+  gesture_level: &id022 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BQAAAAAAAAA=
+  head_position: &id023 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  navigation: &id024 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AgAAAAAAAAA=
+  volume_level: &id025 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BgAAAAAAAAA=
+nextstate_episode_7_timestep_6:
+  gaze: 2
+  gesture_level: &id026 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BQAAAAAAAAA=
+  head_position: &id027 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  navigation: &id028 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  volume_level: &id029 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BwAAAAAAAAA=
+nextstate_episode_7_timestep_7:
+  gaze: 2
+  gesture_level: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BgAAAAAAAAA=
+  head_position: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  navigation: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  volume_level: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    CAAAAAAAAAA=
+previousstate_episode_7_timestep_0:
+  gaze: 0
+  gesture_level: 5
+  head_position: 2
+  navigation: 2
+  volume_level: 5
+previousstate_episode_7_timestep_1:
+  gaze: 0
+  gesture_level: *id002
+  head_position: *id003
+  navigation: *id004
+  volume_level: *id005
+previousstate_episode_7_timestep_2:
+  gaze: 0
+  gesture_level: *id006
+  head_position: *id007
+  navigation: *id008
+  volume_level: *id009
+previousstate_episode_7_timestep_3:
+  gaze: 0
+  gesture_level: *id010
+  head_position: *id011
+  navigation: *id012
+  volume_level: *id013
+previousstate_episode_7_timestep_4:
+  gaze: 0
+  gesture_level: *id014
+  head_position: *id015
+  navigation: *id016
+  volume_level: *id017
+previousstate_episode_7_timestep_5:
+  gaze: 0
+  gesture_level: *id018
+  head_position: *id019
+  navigation: *id020
+  volume_level: *id021
+previousstate_episode_7_timestep_6:
+  gaze: 0
+  gesture_level: *id022
+  head_position: *id023
+  navigation: *id024
+  volume_level: *id025
+previousstate_episode_7_timestep_7:
+  gaze: 1
+  gesture_level: *id026
+  head_position: *id027
+  navigation: *id028
+  volume_level: *id029
+reward_episode_7_timestep_0: 10.0
+reward_episode_7_timestep_1: 10.0
+reward_episode_7_timestep_2: 10.139399493437837
+reward_episode_7_timestep_3: 9.860600506562163
+reward_episode_7_timestep_4: 10.147486220194466
+reward_episode_7_timestep_5: 9.852513779805534
+reward_episode_7_timestep_6: -0.16780167134613477
+reward_episode_7_timestep_7: -0.48024952702949475

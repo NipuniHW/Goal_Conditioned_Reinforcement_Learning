@@ -1,0 +1,950 @@
+action_deltas_episode_29_timestep_0: !!python/tuple
+- 1
+- 0
+- 0
+- 0
+action_deltas_episode_29_timestep_1: !!python/tuple
+- 1
+- 0
+- 0
+- 0
+action_deltas_episode_29_timestep_10: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_11: !!python/tuple
+- 1
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_12: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_13: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_14: !!python/tuple
+- 1
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_15: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_16: !!python/tuple
+- 1
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_17: !!python/tuple
+- 0
+- -1
+- -1
+- -1
+action_deltas_episode_29_timestep_18: !!python/tuple
+- 1
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_19: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_2: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_20: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_21: !!python/tuple
+- 0
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_22: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_23: !!python/tuple
+- -1
+- 0
+- -1
+- 1
+action_deltas_episode_29_timestep_24: !!python/tuple
+- 1
+- 0
+- 0
+- 0
+action_deltas_episode_29_timestep_25: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_26: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_27: !!python/tuple
+- -1
+- 0
+- -1
+- 1
+action_deltas_episode_29_timestep_28: !!python/tuple
+- 1
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_29: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_3: !!python/tuple
+- 1
+- 0
+- 0
+- 0
+action_deltas_episode_29_timestep_30: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_31: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_32: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_33: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_34: !!python/tuple
+- 0
+- -1
+- -1
+- 0
+action_deltas_episode_29_timestep_35: !!python/tuple
+- 0
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_36: !!python/tuple
+- 1
+- 0
+- 0
+- 0
+action_deltas_episode_29_timestep_37: !!python/tuple
+- 0
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_38: !!python/tuple
+- 0
+- -1
+- -1
+- -1
+action_deltas_episode_29_timestep_39: !!python/tuple
+- 0
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_4: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_40: !!python/tuple
+- 1
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_41: !!python/tuple
+- 0
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_42: !!python/tuple
+- 1
+- 1
+- 0
+- 1
+action_deltas_episode_29_timestep_43: !!python/tuple
+- 1
+- 0
+- 0
+- 0
+action_deltas_episode_29_timestep_44: !!python/tuple
+- -1
+- -1
+- -1
+- -1
+action_deltas_episode_29_timestep_45: !!python/tuple
+- 0
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_46: !!python/tuple
+- 1
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_47: !!python/tuple
+- 0
+- 1
+- 1
+- 1
+action_deltas_episode_29_timestep_48: !!python/tuple
+- 0
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_49: !!python/tuple
+- 1
+- 1
+- 1
+- 0
+action_deltas_episode_29_timestep_5: !!python/tuple
+- 1
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_6: !!python/tuple
+- 1
+- -1
+- 0
+- -1
+action_deltas_episode_29_timestep_7: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_8: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_deltas_episode_29_timestep_9: !!python/tuple
+- 0
+- 0
+- 1
+- 0
+action_episode_29_timestep_0: 67
+action_episode_29_timestep_1: 67
+action_episode_29_timestep_10: 43
+action_episode_29_timestep_11: 70
+action_episode_29_timestep_12: 43
+action_episode_29_timestep_13: 43
+action_episode_29_timestep_14: 70
+action_episode_29_timestep_15: 43
+action_episode_29_timestep_16: 57
+action_episode_29_timestep_17: 27
+action_episode_29_timestep_18: 70
+action_episode_29_timestep_19: 43
+action_episode_29_timestep_2: 43
+action_episode_29_timestep_20: 43
+action_episode_29_timestep_21: 30
+action_episode_29_timestep_22: 43
+action_episode_29_timestep_23: 11
+action_episode_29_timestep_24: 67
+action_episode_29_timestep_25: 43
+action_episode_29_timestep_26: 43
+action_episode_29_timestep_27: 11
+action_episode_29_timestep_28: 70
+action_episode_29_timestep_29: 43
+action_episode_29_timestep_3: 67
+action_episode_29_timestep_30: 43
+action_episode_29_timestep_31: 43
+action_episode_29_timestep_32: 43
+action_episode_29_timestep_33: 43
+action_episode_29_timestep_34: 28
+action_episode_29_timestep_35: 30
+action_episode_29_timestep_36: 67
+action_episode_29_timestep_37: 30
+action_episode_29_timestep_38: 27
+action_episode_29_timestep_39: 30
+action_episode_29_timestep_4: 43
+action_episode_29_timestep_40: 70
+action_episode_29_timestep_41: 30
+action_episode_29_timestep_42: 77
+action_episode_29_timestep_43: 67
+action_episode_29_timestep_44: 0
+action_episode_29_timestep_45: 30
+action_episode_29_timestep_46: 57
+action_episode_29_timestep_47: 53
+action_episode_29_timestep_48: 30
+action_episode_29_timestep_49: 79
+action_episode_29_timestep_5: 57
+action_episode_29_timestep_6: 57
+action_episode_29_timestep_7: 43
+action_episode_29_timestep_8: 43
+action_episode_29_timestep_9: 43
+gaze_score_episode_29_timestep_0: 0.0
+gaze_score_episode_29_timestep_1: 29.205298013245034
+gaze_score_episode_29_timestep_10: 27.89125130707564
+gaze_score_episode_29_timestep_11: 24.998257232485187
+gaze_score_episode_29_timestep_12: 26.05088881143256
+gaze_score_episode_29_timestep_13: 31.83687696061346
+gaze_score_episode_29_timestep_14: 25.22531819745442
+gaze_score_episode_29_timestep_15: 0.0
+gaze_score_episode_29_timestep_16: 26.312303938654587
+gaze_score_episode_29_timestep_17: 0.0
+gaze_score_episode_29_timestep_18: 0.0
+gaze_score_episode_29_timestep_19: 24.998257232485187
+gaze_score_episode_29_timestep_2: 29.47019867549669
+gaze_score_episode_29_timestep_20: 0.0
+gaze_score_episode_29_timestep_21: 30.787730916695715
+gaze_score_episode_29_timestep_22: 0.0
+gaze_score_episode_29_timestep_23: 26.57720460090624
+gaze_score_episode_29_timestep_24: 0.0
+gaze_score_episode_29_timestep_25: 27.057103543171657
+gaze_score_episode_29_timestep_26: 29.208783548274663
+gaze_score_episode_29_timestep_27: 26.57720460090624
+gaze_score_episode_29_timestep_28: 0.0
+gaze_score_episode_29_timestep_29: 25.524573021958872
+gaze_score_episode_29_timestep_3: 33.15440920181248
+gaze_score_episode_29_timestep_30: 27.629836179853612
+gaze_score_episode_29_timestep_31: 32.892994074590455
+gaze_score_episode_29_timestep_32: 36.05088881143256
+gaze_score_episode_29_timestep_33: 31.84036249564308
+gaze_score_episode_29_timestep_34: 39.74834437086093
+gaze_score_episode_29_timestep_35: 0.0
+gaze_score_episode_29_timestep_36: 0.0
+gaze_score_episode_29_timestep_37: 32.892994074590455
+gaze_score_episode_29_timestep_38: 0.0
+gaze_score_episode_29_timestep_39: 0.0
+gaze_score_episode_29_timestep_4: 34.30110375275939
+gaze_score_episode_29_timestep_40: 0.0
+gaze_score_episode_29_timestep_41: 0.0
+gaze_score_episode_29_timestep_42: 0.0
+gaze_score_episode_29_timestep_43: 0.0
+gaze_score_episode_29_timestep_44: 27.103520390379927
+gaze_score_episode_29_timestep_45: 0.0
+gaze_score_episode_29_timestep_46: 0.0
+gaze_score_episode_29_timestep_47: 0.0
+gaze_score_episode_29_timestep_48: 0.0
+gaze_score_episode_29_timestep_49: 0.0
+gaze_score_episode_29_timestep_5: 26.491808844750025
+gaze_score_episode_29_timestep_6: 0.0
+gaze_score_episode_29_timestep_7: 0.0
+gaze_score_episode_29_timestep_8: 24.471941443011506
+gaze_score_episode_29_timestep_9: 27.103520390379927
+goal_id_episode_29_timestep_0: 1
+goal_id_episode_29_timestep_1: 1
+goal_id_episode_29_timestep_10: 1
+goal_id_episode_29_timestep_11: 1
+goal_id_episode_29_timestep_12: 1
+goal_id_episode_29_timestep_13: 1
+goal_id_episode_29_timestep_14: 1
+goal_id_episode_29_timestep_15: 1
+goal_id_episode_29_timestep_16: 1
+goal_id_episode_29_timestep_17: 1
+goal_id_episode_29_timestep_18: 1
+goal_id_episode_29_timestep_19: 1
+goal_id_episode_29_timestep_2: 1
+goal_id_episode_29_timestep_20: 1
+goal_id_episode_29_timestep_21: 1
+goal_id_episode_29_timestep_22: 1
+goal_id_episode_29_timestep_23: 1
+goal_id_episode_29_timestep_24: 1
+goal_id_episode_29_timestep_25: 1
+goal_id_episode_29_timestep_26: 1
+goal_id_episode_29_timestep_27: 1
+goal_id_episode_29_timestep_28: 1
+goal_id_episode_29_timestep_29: 1
+goal_id_episode_29_timestep_3: 1
+goal_id_episode_29_timestep_30: 1
+goal_id_episode_29_timestep_31: 1
+goal_id_episode_29_timestep_32: 1
+goal_id_episode_29_timestep_33: 1
+goal_id_episode_29_timestep_34: 1
+goal_id_episode_29_timestep_35: 1
+goal_id_episode_29_timestep_36: 1
+goal_id_episode_29_timestep_37: 1
+goal_id_episode_29_timestep_38: 1
+goal_id_episode_29_timestep_39: 1
+goal_id_episode_29_timestep_4: 1
+goal_id_episode_29_timestep_40: 1
+goal_id_episode_29_timestep_41: 1
+goal_id_episode_29_timestep_42: 1
+goal_id_episode_29_timestep_43: 1
+goal_id_episode_29_timestep_44: 1
+goal_id_episode_29_timestep_45: 1
+goal_id_episode_29_timestep_46: 1
+goal_id_episode_29_timestep_47: 1
+goal_id_episode_29_timestep_48: 1
+goal_id_episode_29_timestep_49: 1
+goal_id_episode_29_timestep_5: 1
+goal_id_episode_29_timestep_6: 1
+goal_id_episode_29_timestep_7: 1
+goal_id_episode_29_timestep_8: 1
+goal_id_episode_29_timestep_9: 1
+next_gaze_score_episode_29_timestep_0: 23.729753914988816
+next_gaze_score_episode_29_timestep_1: 26.44475426978041
+next_gaze_score_episode_29_timestep_10: 21.446497037295227
+next_gaze_score_episode_29_timestep_11: 26.57720460090624
+next_gaze_score_episode_29_timestep_12: 32.88950853956082
+next_gaze_score_episode_29_timestep_13: 27.23248518647613
+next_gaze_score_episode_29_timestep_14: 0.0
+next_gaze_score_episode_29_timestep_15: 20.920181247821542
+next_gaze_score_episode_29_timestep_16: 25.392122690833048
+next_gaze_score_episode_29_timestep_17: 0.0
+next_gaze_score_episode_29_timestep_18: 24.998257232485187
+next_gaze_score_episode_29_timestep_19: 0.0
+next_gaze_score_episode_29_timestep_2: 37.232485186476126
+next_gaze_score_episode_29_timestep_20: 30.787730916695715
+next_gaze_score_episode_29_timestep_21: 0.0
+next_gaze_score_episode_29_timestep_22: 24.078075984663645
+next_gaze_score_episode_29_timestep_23: 22.499128616242594
+next_gaze_score_episode_29_timestep_24: 27.103520390379927
+next_gaze_score_episode_29_timestep_25: 29.208783548274663
+next_gaze_score_episode_29_timestep_26: 26.57720460090624
+next_gaze_score_episode_29_timestep_27: 0.0
+next_gaze_score_episode_29_timestep_28: 25.524573021958872
+next_gaze_score_episode_29_timestep_29: 27.629836179853612
+next_gaze_score_episode_29_timestep_3: 28.55001742767515
+next_gaze_score_episode_29_timestep_30: 32.892994074590455
+next_gaze_score_episode_29_timestep_31: 36.05088881143256
+next_gaze_score_episode_29_timestep_32: 31.84036249564308
+next_gaze_score_episode_29_timestep_33: 39.74834437086093
+next_gaze_score_episode_29_timestep_34: 0.0
+next_gaze_score_episode_29_timestep_35: 0.0
+next_gaze_score_episode_29_timestep_36: 33.02544440571628
+next_gaze_score_episode_29_timestep_37: 0.0
+next_gaze_score_episode_29_timestep_38: 0.0
+next_gaze_score_episode_29_timestep_39: 0.0
+next_gaze_score_episode_29_timestep_4: 36.70616939700244
+next_gaze_score_episode_29_timestep_40: 0.0
+next_gaze_score_episode_29_timestep_41: 0.0
+next_gaze_score_episode_29_timestep_42: 0.0
+next_gaze_score_episode_29_timestep_43: 27.103520390379927
+next_gaze_score_episode_29_timestep_44: 0.0
+next_gaze_score_episode_29_timestep_45: 0.0
+next_gaze_score_episode_29_timestep_46: 0.0
+next_gaze_score_episode_29_timestep_47: 0.0
+next_gaze_score_episode_29_timestep_48: 0.0
+next_gaze_score_episode_29_timestep_49: 0.0
+next_gaze_score_episode_29_timestep_5: 0.0
+next_gaze_score_episode_29_timestep_6: 0.0
+next_gaze_score_episode_29_timestep_7: 24.471941443011506
+next_gaze_score_episode_29_timestep_8: 27.103520390379927
+next_gaze_score_episode_29_timestep_9: 27.89125130707564
+nextstate_episode_29_timestep_0:
+  gaze: 0
+nextstate_episode_29_timestep_1:
+  gaze: 0
+nextstate_episode_29_timestep_10:
+  gaze: 0
+nextstate_episode_29_timestep_11:
+  gaze: 0
+nextstate_episode_29_timestep_12:
+  gaze: 0
+nextstate_episode_29_timestep_13:
+  gaze: 0
+nextstate_episode_29_timestep_14:
+  gaze: 0
+nextstate_episode_29_timestep_15:
+  gaze: 0
+nextstate_episode_29_timestep_16:
+  gaze: 0
+nextstate_episode_29_timestep_17:
+  gaze: 0
+nextstate_episode_29_timestep_18:
+  gaze: 0
+nextstate_episode_29_timestep_19:
+  gaze: 0
+nextstate_episode_29_timestep_2:
+  gaze: 1
+nextstate_episode_29_timestep_20:
+  gaze: 0
+nextstate_episode_29_timestep_21:
+  gaze: 0
+nextstate_episode_29_timestep_22:
+  gaze: 0
+nextstate_episode_29_timestep_23:
+  gaze: 0
+nextstate_episode_29_timestep_24:
+  gaze: 0
+nextstate_episode_29_timestep_25:
+  gaze: 0
+nextstate_episode_29_timestep_26:
+  gaze: 0
+nextstate_episode_29_timestep_27:
+  gaze: 0
+nextstate_episode_29_timestep_28:
+  gaze: 0
+nextstate_episode_29_timestep_29:
+  gaze: 0
+nextstate_episode_29_timestep_3:
+  gaze: 0
+nextstate_episode_29_timestep_30:
+  gaze: 0
+nextstate_episode_29_timestep_31:
+  gaze: 1
+nextstate_episode_29_timestep_32:
+  gaze: 0
+nextstate_episode_29_timestep_33:
+  gaze: 1
+nextstate_episode_29_timestep_34:
+  gaze: 0
+nextstate_episode_29_timestep_35:
+  gaze: 0
+nextstate_episode_29_timestep_36:
+  gaze: 1
+nextstate_episode_29_timestep_37:
+  gaze: 0
+nextstate_episode_29_timestep_38:
+  gaze: 0
+nextstate_episode_29_timestep_39:
+  gaze: 0
+nextstate_episode_29_timestep_4:
+  gaze: 1
+nextstate_episode_29_timestep_40:
+  gaze: 0
+nextstate_episode_29_timestep_41:
+  gaze: 0
+nextstate_episode_29_timestep_42:
+  gaze: 0
+nextstate_episode_29_timestep_43:
+  gaze: 0
+nextstate_episode_29_timestep_44:
+  gaze: 0
+nextstate_episode_29_timestep_45:
+  gaze: 0
+nextstate_episode_29_timestep_46:
+  gaze: 0
+nextstate_episode_29_timestep_47:
+  gaze: 0
+nextstate_episode_29_timestep_48:
+  gaze: 0
+nextstate_episode_29_timestep_49:
+  gaze: 0
+nextstate_episode_29_timestep_5:
+  gaze: 0
+nextstate_episode_29_timestep_6:
+  gaze: 0
+nextstate_episode_29_timestep_7:
+  gaze: 0
+nextstate_episode_29_timestep_8:
+  gaze: 0
+nextstate_episode_29_timestep_9:
+  gaze: 0
+pepper_state_episode_29_timestep_0: !!python/tuple
+- 4
+- 5
+- 2
+- 5
+pepper_state_episode_29_timestep_1: !!python/tuple
+- 4
+- 5
+- 2
+- 5
+pepper_state_episode_29_timestep_10: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+pepper_state_episode_29_timestep_11: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+pepper_state_episode_29_timestep_12: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+pepper_state_episode_29_timestep_13: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+pepper_state_episode_29_timestep_14: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+pepper_state_episode_29_timestep_15: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+pepper_state_episode_29_timestep_16: !!python/tuple
+- 1
+- 9
+- 2
+- 2
+pepper_state_episode_29_timestep_17: !!python/tuple
+- 0
+- 8
+- 2
+- 1
+pepper_state_episode_29_timestep_18: !!python/tuple
+- 0
+- 9
+- 2
+- 1
+pepper_state_episode_29_timestep_19: !!python/tuple
+- 0
+- 9
+- 2
+- 1
+pepper_state_episode_29_timestep_2: !!python/tuple
+- 4
+- 6
+- 2
+- 5
+pepper_state_episode_29_timestep_20: !!python/tuple
+- 0
+- 9
+- 2
+- 1
+pepper_state_episode_29_timestep_21: !!python/tuple
+- 0
+- 9
+- 2
+- 0
+pepper_state_episode_29_timestep_22: !!python/tuple
+- 0
+- 9
+- 2
+- 0
+pepper_state_episode_29_timestep_23: !!python/tuple
+- 0
+- 8
+- 1
+- 1
+pepper_state_episode_29_timestep_24: !!python/tuple
+- 0
+- 8
+- 2
+- 1
+pepper_state_episode_29_timestep_25: !!python/tuple
+- 0
+- 9
+- 2
+- 1
+pepper_state_episode_29_timestep_26: !!python/tuple
+- 0
+- 9
+- 2
+- 1
+pepper_state_episode_29_timestep_27: !!python/tuple
+- 0
+- 8
+- 1
+- 2
+pepper_state_episode_29_timestep_28: !!python/tuple
+- 0
+- 9
+- 2
+- 2
+pepper_state_episode_29_timestep_29: !!python/tuple
+- 0
+- 9
+- 2
+- 2
+pepper_state_episode_29_timestep_3: !!python/tuple
+- 4
+- 6
+- 2
+- 5
+pepper_state_episode_29_timestep_30: !!python/tuple
+- 0
+- 9
+- 2
+- 2
+pepper_state_episode_29_timestep_31: !!python/tuple
+- 0
+- 9
+- 2
+- 2
+pepper_state_episode_29_timestep_32: !!python/tuple
+- 0
+- 9
+- 2
+- 2
+pepper_state_episode_29_timestep_33: !!python/tuple
+- 0
+- 9
+- 2
+- 2
+pepper_state_episode_29_timestep_34: !!python/tuple
+- 0
+- 8
+- 2
+- 2
+pepper_state_episode_29_timestep_35: !!python/tuple
+- 0
+- 8
+- 2
+- 1
+pepper_state_episode_29_timestep_36: !!python/tuple
+- 0
+- 8
+- 2
+- 1
+pepper_state_episode_29_timestep_37: !!python/tuple
+- 0
+- 8
+- 2
+- 0
+pepper_state_episode_29_timestep_38: !!python/tuple
+- 0
+- 7
+- 2
+- 0
+pepper_state_episode_29_timestep_39: !!python/tuple
+- 0
+- 7
+- 2
+- 0
+pepper_state_episode_29_timestep_4: !!python/tuple
+- 4
+- 7
+- 2
+- 5
+pepper_state_episode_29_timestep_40: !!python/tuple
+- 0
+- 8
+- 2
+- 0
+pepper_state_episode_29_timestep_41: !!python/tuple
+- 0
+- 8
+- 2
+- 0
+pepper_state_episode_29_timestep_42: !!python/tuple
+- 1
+- 8
+- 2
+- 1
+pepper_state_episode_29_timestep_43: !!python/tuple
+- 1
+- 8
+- 2
+- 1
+pepper_state_episode_29_timestep_44: !!python/tuple
+- 0
+- 7
+- 1
+- 0
+pepper_state_episode_29_timestep_45: !!python/tuple
+- 0
+- 7
+- 1
+- 0
+pepper_state_episode_29_timestep_46: !!python/tuple
+- 0
+- 7
+- 2
+- 0
+pepper_state_episode_29_timestep_47: !!python/tuple
+- 1
+- 8
+- 2
+- 1
+pepper_state_episode_29_timestep_48: !!python/tuple
+- 0
+- 8
+- 2
+- 0
+pepper_state_episode_29_timestep_49: !!python/tuple
+- 1
+- 9
+- 2
+- 0
+pepper_state_episode_29_timestep_5: !!python/tuple
+- 3
+- 7
+- 2
+- 4
+pepper_state_episode_29_timestep_6: !!python/tuple
+- 2
+- 7
+- 2
+- 3
+pepper_state_episode_29_timestep_7: !!python/tuple
+- 2
+- 8
+- 2
+- 3
+pepper_state_episode_29_timestep_8: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+pepper_state_episode_29_timestep_9: !!python/tuple
+- 2
+- 9
+- 2
+- 3
+reward_episode_29_timestep_0: 11.864876957494408
+reward_episode_29_timestep_1: -2.7605437434646234
+reward_episode_29_timestep_10: -6.444754269780411
+reward_episode_29_timestep_11: 0.7894736842105257
+reward_episode_29_timestep_12: 3.4193098640641306
+reward_episode_29_timestep_13: -4.60439177413733
+reward_episode_29_timestep_14: -25.22531819745442
+reward_episode_29_timestep_15: 10.460090623910771
+reward_episode_29_timestep_16: -0.9201812478215388
+reward_episode_29_timestep_17: -2
+reward_episode_29_timestep_18: 12.499128616242594
+reward_episode_29_timestep_19: -24.998257232485187
+reward_episode_29_timestep_2: 50
+reward_episode_29_timestep_20: 15.393865458347857
+reward_episode_29_timestep_21: -30.787730916695715
+reward_episode_29_timestep_22: 12.039037992331822
+reward_episode_29_timestep_23: -4.078075984663645
+reward_episode_29_timestep_24: 13.551760195189964
+reward_episode_29_timestep_25: 1.0758400025515034
+reward_episode_29_timestep_26: -2.631578947368425
+reward_episode_29_timestep_27: -26.57720460090624
+reward_episode_29_timestep_28: 12.762286510979436
+reward_episode_29_timestep_29: 1.05263157894737
+reward_episode_29_timestep_3: -4.604391774137326
+reward_episode_29_timestep_30: 2.6315789473684212
+reward_episode_29_timestep_31: 50
+reward_episode_29_timestep_32: -4.210526315789476
+reward_episode_29_timestep_33: 50
+reward_episode_29_timestep_34: -39.74834437086093
+reward_episode_29_timestep_35: -2
+reward_episode_29_timestep_36: 16.51272220285814
+reward_episode_29_timestep_37: -32.892994074590455
+reward_episode_29_timestep_38: -2
+reward_episode_29_timestep_39: -2
+reward_episode_29_timestep_4: 50
+reward_episode_29_timestep_40: -2
+reward_episode_29_timestep_41: -2
+reward_episode_29_timestep_42: -2
+reward_episode_29_timestep_43: 13.551760195189964
+reward_episode_29_timestep_44: -27.103520390379927
+reward_episode_29_timestep_45: -2
+reward_episode_29_timestep_46: -2
+reward_episode_29_timestep_47: -2
+reward_episode_29_timestep_48: -2
+reward_episode_29_timestep_49: -2
+reward_episode_29_timestep_5: -26.491808844750025
+reward_episode_29_timestep_6: -2
+reward_episode_29_timestep_7: 12.235970721505753
+reward_episode_29_timestep_8: 1.3157894736842106
+reward_episode_29_timestep_9: 0.3938654583478556
+state_episode_29_timestep_0:
+  gaze: 0
+state_episode_29_timestep_1:
+  gaze: 0
+state_episode_29_timestep_10:
+  gaze: 0
+state_episode_29_timestep_11:
+  gaze: 0
+state_episode_29_timestep_12:
+  gaze: 0
+state_episode_29_timestep_13:
+  gaze: 0
+state_episode_29_timestep_14:
+  gaze: 0
+state_episode_29_timestep_15:
+  gaze: 0
+state_episode_29_timestep_16:
+  gaze: 0
+state_episode_29_timestep_17:
+  gaze: 0
+state_episode_29_timestep_18:
+  gaze: 0
+state_episode_29_timestep_19:
+  gaze: 0
+state_episode_29_timestep_2:
+  gaze: 0
+state_episode_29_timestep_20:
+  gaze: 0
+state_episode_29_timestep_21:
+  gaze: 0
+state_episode_29_timestep_22:
+  gaze: 0
+state_episode_29_timestep_23:
+  gaze: 0
+state_episode_29_timestep_24:
+  gaze: 0
+state_episode_29_timestep_25:
+  gaze: 0
+state_episode_29_timestep_26:
+  gaze: 0
+state_episode_29_timestep_27:
+  gaze: 0
+state_episode_29_timestep_28:
+  gaze: 0
+state_episode_29_timestep_29:
+  gaze: 0
+state_episode_29_timestep_3:
+  gaze: 1
+state_episode_29_timestep_30:
+  gaze: 0
+state_episode_29_timestep_31:
+  gaze: 0
+state_episode_29_timestep_32:
+  gaze: 1
+state_episode_29_timestep_33:
+  gaze: 0
+state_episode_29_timestep_34:
+  gaze: 1
+state_episode_29_timestep_35:
+  gaze: 0
+state_episode_29_timestep_36:
+  gaze: 0
+state_episode_29_timestep_37:
+  gaze: 1
+state_episode_29_timestep_38:
+  gaze: 0
+state_episode_29_timestep_39:
+  gaze: 0
+state_episode_29_timestep_4:
+  gaze: 0
+state_episode_29_timestep_40:
+  gaze: 0
+state_episode_29_timestep_41:
+  gaze: 0
+state_episode_29_timestep_42:
+  gaze: 0
+state_episode_29_timestep_43:
+  gaze: 0
+state_episode_29_timestep_44:
+  gaze: 0
+state_episode_29_timestep_45:
+  gaze: 0
+state_episode_29_timestep_46:
+  gaze: 0
+state_episode_29_timestep_47:
+  gaze: 0
+state_episode_29_timestep_48:
+  gaze: 0
+state_episode_29_timestep_49:
+  gaze: 0
+state_episode_29_timestep_5:
+  gaze: 1
+state_episode_29_timestep_6:
+  gaze: 0
+state_episode_29_timestep_7:
+  gaze: 0
+state_episode_29_timestep_8:
+  gaze: 0
+state_episode_29_timestep_9:
+  gaze: 0

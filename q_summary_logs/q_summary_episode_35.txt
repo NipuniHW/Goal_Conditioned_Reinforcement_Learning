@@ -1,0 +1,26 @@
+=== Q-Table Approximation Summary ===
+Goal ID: 2 | Epsilon: 0.0997
+
+
+--- Gaze State: Low (value=0) ---
+  Rank 1: Action 17 | Deltas(head=-1, nav=+0, gesture=+1, volume=+1) | Q-value: 3379.130
+  Rank 2: Action 12 | Deltas(head=-1, nav=+0, gesture=+0, volume=-1) | Q-value: 3363.621
+  Rank 3: Action 59 | Deltas(head=+1, nav=-1, gesture=+0, volume=+1) | Q-value: 3331.996
+  Rank 4: Action 35 | Deltas(head=+0, nav=-1, gesture=+1, volume=+1) | Q-value: 3315.562
+  Rank 5: Action 34 | Deltas(head=+0, nav=-1, gesture=+1, volume=+0) | Q-value: 3279.649
+
+--- Gaze State: Medium (value=1) ---
+  Rank 1: Action 12 | Deltas(head=-1, nav=+0, gesture=+0, volume=-1) | Q-value: 4699.939
+  Rank 2: Action 35 | Deltas(head=+0, nav=-1, gesture=+1, volume=+1) | Q-value: 4476.520
+  Rank 3: Action 76 | Deltas(head=+1, nav=+1, gesture=+0, volume=+0) | Q-value: 4452.941
+  Rank 4: Action 17 | Deltas(head=-1, nav=+0, gesture=+1, volume=+1) | Q-value: 4416.441
+  Rank 5: Action 23 | Deltas(head=-1, nav=+1, gesture=+0, volume=+1) | Q-value: 4385.025
+
+--- Gaze State: High (value=2) ---
+  Rank 1: Action 12 | Deltas(head=-1, nav=+0, gesture=+0, volume=-1) | Q-value: 5474.558
+  Rank 2: Action 35 | Deltas(head=+0, nav=-1, gesture=+1, volume=+1) | Q-value: 5313.721
+  Rank 3: Action 1 | Deltas(head=-1, nav=-1, gesture=-1, volume=+0) | Q-value: 5288.410
+  Rank 4: Action 23 | Deltas(head=-1, nav=+1, gesture=+0, volume=+1) | Q-value: 5287.082
+  Rank 5: Action 21 | Deltas(head=-1, nav=+1, gesture=+0, volume=-1) | Q-value: 5215.991
+
+=====================================

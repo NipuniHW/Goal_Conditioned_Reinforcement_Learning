@@ -1,6 +1,6 @@
 #!/usr/bin/python3.10
 
-import pickle
+import os
 from l2cs.gaze_detectors import Gaze_Detector
 import torch
 from copy import deepcopy
@@ -8,11 +8,11 @@ import math
 import pdb
 import cv2
 import numpy as np
-from time import time, sleep
+from time import time, sleep, strftime, localtime
 from collections import deque
 from threading import Thread, Lock
 
-CALIBRATION_FILE = "/home/vscode/gaze_ws/calibration_data.pkl"
+import yaml
 
 class AttentionDetector:
     def __init__(self, 
@@ -207,17 +207,12 @@ class CalibratedAttentionDetector(AttentionDetector):
 
 def calculate_attention_metrics(attention_window, interval_duration=5.0):
     """
-    Calculate attention metrics for a given time window of attention data with improved DGEI.
-    
-    Logic:
-    - Primarily based on robot attention ratio (80% weight)
-    - Temporal consistency provides bonus (20% weight)
-    - Entropy is used minimally, only as a small modifier
+    Calculate attention metrics for a given time window of attention data.
     
     Args:
         attention_window (list): List of tuples (timestamp, attention_state)
         interval_duration (float): Duration of analysis interval in seconds
-    
+        
     Returns:
         dict: Dictionary containing attention metrics:
             - attention_ratio: Ratio of frames with attention detected
@@ -225,9 +220,7 @@ def calculate_attention_metrics(attention_window, interval_duration=5.0):
             - frames_in_interval: Number of frames in analyzed interval
             - robot_looks: Number of frames looking at robot
             - non_robot_looks: Number of frames not looking at robot
-            - gaze_score: Improved DGEI score (0-100)
     """
-    
     if not attention_window:
         return {
             'attention_ratio': 0.0,
@@ -240,15 +233,17 @@ def calculate_attention_metrics(attention_window, interval_duration=5.0):
     
     # Get current time and filter window to only include last interval_duration seconds
     current_time = attention_window[-1][0]  # Latest timestamp
-    filtered_window = [(t, a) for t, a in attention_window
+    filtered_window = [(t, a) for t, a in attention_window 
                       if current_time - t <= interval_duration]
+    # print("The filtered window is ", filtered_window)
+    # print("the size of the filtered window is ", len(filtered_window))
     
     # Count frames
     frames_in_interval = len(filtered_window)
     robot_looks = sum(1 for _, attention in filtered_window if attention)
     non_robot_looks = frames_in_interval - robot_looks
     
-    # Calculate attention ratio (gaze concentration)
+    # Calculate attention ratio
     attention_ratio = robot_looks / frames_in_interval if frames_in_interval > 0 else 0.0
     
     # Calculate stationary gaze entropy
@@ -263,53 +258,28 @@ def calculate_attention_metrics(attention_window, interval_duration=5.0):
         if p_non_robot > 0:
             gaze_entropy -= p_non_robot * math.log2(p_non_robot)
     
-    # Calculate temporal consistency (how stable the gaze pattern is)
-    temporal_consistency = 1.0
-    if len(filtered_window) > 1:
-        attention_states = [attention for _, attention in filtered_window]
-        transitions = 0
-        for i in range(1, len(attention_states)):
-            if attention_states[i] != attention_states[i-1]:
-                transitions += 1
-        
-        max_transitions = len(attention_states) - 1
-        if max_transitions > 0:
-            temporal_consistency = 1.0 - (transitions / max_transitions)
+    ### Cacluations for gaze score on pepper
+
+    # Compute gaze score using the new formula
+    # # High gc Low entrophy: gaze score high 
+    # # High gc High entropy: gaze score low
+    # # low gc high entrophy: gaze score low
+    # # low gc low entrophy: gaze score low
     
-    ### Simplified DGEI Calculation ###
+    # Normalize the attention ratio
+    normalized_attention_ratio = min(attention_ratio, 1.0)
     
-    # If no gaze at robot at all, return 0
-    if attention_ratio == 0.0:
-        gaze_score = 0.0
+    # Normalize the gaze entropy (lower entropy is better for focused attention)
+    normalized_entropy = 1.0 - min(gaze_entropy, 1.0)
+
+    if gaze_entropy == 1.0 or (robot_looks > 30 and 1.0 > gaze_entropy > 0.7):
+        gaze_score = 100 * normalized_attention_ratio
     else:
-        # Data sufficiency penalty for very small samples
-        if frames_in_interval < 3:
-            data_sufficiency = frames_in_interval / 3.0
-        else:
-            data_sufficiency = 1.0
-        
-        # Primary score: 80% based on robot attention ratio
-        primary_score = attention_ratio * 0.8
-        
-        # Temporal consistency bonus: 20% based on how stable the gaze is
-        consistency_bonus = temporal_consistency * 0.2
-        
-        # Small entropy modifier: slight penalty for very high entropy (>0.8)
-        entropy_modifier = 1.0
-        if gaze_entropy > 0.8:
-            entropy_modifier = 0.95  # 5% penalty for very scattered attention
-        
-        # Final calculation
-        base_score = (primary_score + consistency_bonus) * entropy_modifier
-        
-        # Apply data sufficiency penalty
-        final_score = base_score * data_sufficiency
-        
-        # Scale to 0-100 and ensure bounds
-        gaze_score = final_score * 100
-        gaze_score = max(0.0, min(100.0, gaze_score))
+        gaze_score = 100 * (normalized_attention_ratio * normalized_entropy)
     
-    ### End DGEI Calculation ###
+    gaze_score = max(0, min(100, gaze_score))  # Ensure score is within 0-100
+    
+    ### End additional calculations
     
     return {
         'attention_ratio': attention_ratio,
@@ -321,7 +291,7 @@ def calculate_attention_metrics(attention_window, interval_duration=5.0):
     }
 
 class GazeInterfaceController:
-    def __init__(self, camera_id=0, gaze_angle_tolerance = 15.0):
+    def __init__(self, camera_id=2, gaze_angle_tolerance = 15.0):
         self.camera_id = camera_id
         self.cap = cv2.VideoCapture(self.camera_id)
         self.detector = AttentionDetector()
@@ -335,8 +305,6 @@ class GazeInterfaceController:
         self.robot_looks = 0
         self.gaze_entropy_lock = Lock()
         self.gaze_entropy = 0.0
-        self.visualisation_frame = None  # Initialize to prevent AttributeError
-        
         
     def get_gaze_score(self):
         self.gaze_score_lock.acquire()
@@ -358,7 +326,7 @@ class GazeInterfaceController:
     
     def get_visualisation_frame(self):
         self.gaze_score_lock.acquire()
-        frame = self.visualisation_frame.copy() if self.visualisation_frame is not None else None
+        frame = self.visualisation_frame.copy()
         self.gaze_score_lock.release()
         return frame
     
@@ -369,20 +337,12 @@ class GazeInterfaceController:
         cv2.destroyAllWindows()
         sleep(0.5)
         self.attention_thread.join()
-      
         
-    def calibration_exe(self, no_cal=False):
-
-        if(no_cal):
-            print("Skipping calibration")
-            return
-                
+        
+    def calibration_exe(self):        
         # Start calibration
         print("Running Calibration function in Gaze Controller")
 
-        if self.load_calibration_data():  # Try loading existing calibration data
-            return  
-    
         self.calibrator.start_calibration()
         is_complete = False
         
@@ -411,9 +371,6 @@ class GazeInterfaceController:
                     print(f"Baseline Yaw: {self.calibrator.baseline_yaw:.2f}")
                     print(f"Pitch Threshold: {self.calibrator.pitch_threshold:.2f}")
                     print(f"Yaw Threshold: {self.calibrator.yaw_threshold:.2f}")
-
-                    self.save_calibration_data() 
-
                     break
             
             self.gaze_score_lock.acquire()
@@ -432,34 +389,7 @@ class GazeInterfaceController:
         self.cap.release()
         cv2.destroyAllWindows()
         
-    def save_calibration_data(self):
-        """Save calibration data to a JSON file."""
-        calibration_data = {
-            'baseline_pitch': self.calibrator.baseline_pitch,
-            'baseline_yaw': self.calibrator.baseline_yaw,
-            'pitch_threshold': self.calibrator.pitch_threshold,
-            'yaw_threshold': self.calibrator.yaw_threshold
-        }
-
-        with open(CALIBRATION_FILE, 'wb') as f:
-            pickle.dump(calibration_data, f)
-        print("Calibration data saved.")
-        
-    def load_calibration_data(self):
-        """Load existing calibration data if it exists."""
-        try:
-            with open(CALIBRATION_FILE, 'rb') as f:
-                calibration_data = pickle.load(f)
-            self.calibrator.baseline_pitch = calibration_data['baseline_pitch']
-            self.calibrator.baseline_yaw = calibration_data['baseline_yaw']
-            self.calibrator.pitch_threshold = calibration_data['pitch_threshold']
-            self.calibrator.yaw_threshold = calibration_data['yaw_threshold']
-            self.calibrator.is_calibrated = True
-            print("Calibration data loaded successfully.")
-            return True
-        except FileNotFoundError:
-            print("No calibration data found.")
-            return False  
+    
         
     def start_detecting_attention(self):
         print("\nStarting attention detection with calibrated values...")
@@ -540,6 +470,11 @@ class GazeInterfaceController:
             # if cv2.waitKey(5) & 0xFF == 27:
             #     break
         
+def save_DGEI_data(name, time_now, training_dict):
+    save_path = f'{name}/{name}_{time_now}_DGEI.yaml'
+    with open(save_path, 'w') as file:
+        yaml.dump(training_dict, file)
+    return
         
 if __name__=="__main__":
     controller = GazeInterfaceController(camera_id=2)
@@ -550,17 +485,35 @@ if __name__=="__main__":
     duration = 5 * 60  # 3 minutes in seconds
     interval = 5  # Interval in seconds
     next_print_time = start_time + interval
+    save_dictionary = {}
+    time_step_count = 0
+    time_now = strftime('%H:%M:%S', localtime(start_time))
+
+    if not os.path.exists('saved_data'):
+        print('we are executing a new session')
+        os.makedirs('saved_data')
+        print('made directory:' + 'saved_data' + ' for testing data')
+
     try:
         
         while time() - start_time < duration:            
             # Print the gaze score every 5 seconds
             current_time = time()
             if current_time >= next_print_time:
-                print(f"####### Gaze Score: {controller.get_gaze_score()}")
-                print(f"Robot looks: {controller.get_robot_looks()}")
-                print(f"Gaze entropy: {controller.get_gaze_entropy()}")
+                gaze_score = controller.get_gaze_score()
+                robot_looks = controller.get_robot_looks()
+                gaze_entropy = controller.get_gaze_entropy()
+                print(f"####### Gaze Score: {gaze_score}")
+                print(f"Robot looks: {robot_looks}")
+                print(f"Gaze entropy: {gaze_entropy}")
+                save_dictionary['gaze_score_timestep_'+str(time_step_count)] = gaze_score
+                save_dictionary['robot_looks_timestep_'+str(time_step_count)] = robot_looks
+                save_dictionary['gaze_entropy_timestep_'+str(time_step_count)] = gaze_entropy
+                time_step_count += 1
                 next_print_time = current_time + interval
-            
+
+            save_DGEI_data('saved_data', time_now, save_dictionary)
+
             frame = controller.get_visualisation_frame()
             if frame is not None:
                 f = deepcopy(frame)
@@ -572,6 +525,8 @@ if __name__=="__main__":
                 print("Frame is None")
             sleep(0.05)
         
+            
+
         cv2.destroyAllWindows()
         controller.kill_attention_thread()
         exit(0)

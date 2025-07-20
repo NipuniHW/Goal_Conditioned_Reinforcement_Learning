@@ -1,0 +1,173 @@
+action_episode_6_timestep_0: 0
+action_episode_6_timestep_1: 12
+action_episode_6_timestep_2: 48
+action_episode_6_timestep_3: 12
+action_episode_6_timestep_4: 23
+goal_id_episode_6_timestep_0: 0
+goal_id_episode_6_timestep_1: 0
+goal_id_episode_6_timestep_2: 0
+goal_id_episode_6_timestep_3: 0
+goal_id_episode_6_timestep_4: 0
+navigation_gesture_headmovement_volume_episode_(3, 4, 0, 3)_timestep_1: !!python/tuple
+- 3
+- 4
+- 0
+- 3
+navigation_gesture_headmovement_volume_episode_(3, 4, 1, 4)_timestep_0: !!python/tuple
+- 3
+- 4
+- 1
+- 4
+navigation_gesture_headmovement_volume_episode_(4, 4, 0, 1)_timestep_3: !!python/tuple
+- 4
+- 4
+- 0
+- 1
+navigation_gesture_headmovement_volume_episode_(4, 4, 0, 2)_timestep_2: !!python/tuple
+- 4
+- 4
+- 0
+- 2
+navigation_gesture_headmovement_volume_episode_(4, 4, 0, 2)_timestep_4: !!python/tuple
+- 4
+- 4
+- 0
+- 2
+nextstate_episode_6_timestep_0:
+  gaze: 1
+  gesture_level: &id002 !!python/object/apply:numpy.core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args:
+    - i8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    BAAAAAAAAAA=
+  head_position: &id003 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  navigation: &id004 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  volume_level: &id005 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+nextstate_episode_6_timestep_1:
+  gaze: 0
+  gesture_level: &id006 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+  head_position: &id007 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  navigation: &id008 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+  volume_level: &id009 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AwAAAAAAAAA=
+nextstate_episode_6_timestep_2:
+  gaze: 0
+  gesture_level: &id010 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+  head_position: &id011 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  navigation: &id012 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AgAAAAAAAAA=
+  volume_level: &id013 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AgAAAAAAAAA=
+nextstate_episode_6_timestep_3:
+  gaze: 0
+  gesture_level: &id014 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+  head_position: &id015 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  navigation: &id016 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AgAAAAAAAAA=
+  volume_level: &id017 !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AQAAAAAAAAA=
+nextstate_episode_6_timestep_4:
+  gaze: 0
+  gesture_level: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAAAAAAAAAA=
+  head_position: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  navigation: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AwAAAAAAAAA=
+  volume_level: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AgAAAAAAAAA=
+previousstate_episode_6_timestep_0:
+  gaze: 0
+  gesture_level: 5
+  head_position: 2
+  navigation: 2
+  volume_level: 5
+previousstate_episode_6_timestep_1:
+  gaze: 0
+  gesture_level: *id002
+  head_position: *id003
+  navigation: *id004
+  volume_level: *id005
+previousstate_episode_6_timestep_2:
+  gaze: 1
+  gesture_level: *id006
+  head_position: *id007
+  navigation: *id008
+  volume_level: *id009
+previousstate_episode_6_timestep_3:
+  gaze: 0
+  gesture_level: *id010
+  head_position: *id011
+  navigation: *id012
+  volume_level: *id013
+previousstate_episode_6_timestep_4:
+  gaze: 0
+  gesture_level: *id014
+  head_position: *id015
+  navigation: *id016
+  volume_level: *id017
+reward_episode_6_timestep_0: 9.854275829543274
+reward_episode_6_timestep_1: -0.13341118810911085
+reward_episode_6_timestep_2: 10.268449433719102
+reward_episode_6_timestep_3: 9.864961754390007
+reward_episode_6_timestep_4: 10.0
