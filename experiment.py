@@ -1,5 +1,7 @@
 #!/usr/bin/python3.10
 
+# This is the experiment script for testing the GCRL algorithm with gaze control on Pepper robot.
+
 import sys
 import cv2
 from time import sleep, time
@@ -19,7 +21,7 @@ def test_q_learning(duration_minutes, goal_id, HM1, N1, G1, V1, subject_count):
             del pepper 
         else:
             # Change the camera ID to 2 if using external USB webcam, 0 if using the laptop webcam
-            controller = GazeInterfaceController(camera_id=0)
+            controller = GazeInterfaceController(camera_id=2)
             sleep(1)
             
             print('Press Enter to start the calibration')

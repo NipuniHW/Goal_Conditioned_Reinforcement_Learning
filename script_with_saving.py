@@ -15,6 +15,7 @@ from threading import Thread, Lock
 
 import yaml
 
+
 CALIBRATION_FILE = "/home/vscode/gaze_ws/calibration_data.pkl"
 
 class AttentionDetector:

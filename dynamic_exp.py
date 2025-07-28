@@ -10,6 +10,8 @@ from gaze_controller import *
 from experiment_functions import *
 import pandas as pd
 
+# This is the dynamic experiment script for testing the GCRL algorithm with gaze control on Pepper robot.
+
 def _normalize_gaze_to_category(gaze_value: float) -> int:
     if gaze_value <= 33:
         return 0
@@ -25,7 +27,7 @@ def test_q_learning(HM1, N1, G1, V1, subject_count):
     if not pepper.is_connected:
         sys.exit(1)
 
-    controller = GazeInterfaceController(camera_id=0)
+    controller = GazeInterfaceController(camera_id=2)
     sleep(1)
 
     print('Press Enter to start the calibration')
@@ -71,14 +73,16 @@ def test_q_learning(HM1, N1, G1, V1, subject_count):
                 save_dictionary[f'prev_gaze_subject_{subject_count}_timestep_{time_step_count}'] = gaze_score
                 save_dictionary[f'next_state_subject_{subject_count}_timestep_{time_step_count}'] = next_state
                 save_dictionary[f'next_gaze_subject_{subject_count}_timestep_{time_step_count}'] = next_gaze_score
-                save_dictionary[f'action_subject_{subject_count}_timestep_{time_step_count}'] = (dh, dn, dg, dv)
+                save_dictionary[f'action_subject_{subject_count}_timestep_{time_step_count}'] = int(dh), int(dn), int(dg), int(dv)
 
                 time_step_count += 1
                 sleep(0.3)
+        # Save the data for this goal ID
+        save_trajectory_ep_to_yaml('dynamic_experiment_data_partI', subject_count, save_dictionary)
 
     # === PHASE 2: Run 'random_actions' for 180 seconds ===
     print("\n--- Running Pepper's random_actions animation ---\n")
-    pepper.execute_animation('random_actions')
+    pepper.execute_animation('action_gcrl/random')
     start_time = time()
 
     while time() - start_time < 180:
@@ -99,8 +103,9 @@ def test_q_learning(HM1, N1, G1, V1, subject_count):
             time_step_count += 1
             sleep(0.3)
 
-    # === Save all ===
-    save_trajectory_ep_to_yaml('dynamic_experiment_data', subject_count, save_dictionary)
+        # === Save random gaze data ===
+        save_trajectory_ep_to_yaml('dynamic_experiment_data_partII', subject_count, save_dictionary)
+
     controller.kill_attention_thread()
     cv2.destroyAllWindows()
     del pepper
@@ -113,9 +118,13 @@ if __name__ == "__main__":
     initial_V = 5
     subject_count = 0    
 
-    if not os.path.exists('dynamic_experiment_data'):
-        os.makedirs('dynamic_experiment_data')
-        print('Created directory: dynamic_experiment_data')
+    if not os.path.exists('dynamic_experiment_data_partI'):
+        os.makedirs('dynamic_experiment_data_partI')
+        print('Created directory: dynamic_experiment_data_partI')
+    
+    if not os.path.exists('dynamic_experiment_data_partII'):
+        os.makedirs('dynamic_experiment_data_partII')
+        print('Created directory: dynamic_experiment_data_partII')
 
     while True:
         subject_count += 1

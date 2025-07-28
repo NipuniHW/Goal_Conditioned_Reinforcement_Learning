@@ -15,7 +15,7 @@ def load_q_table(file_path):
     return q_table
 
 # Load the CSV data into a DataFrame
-action_df = pd.read_csv("/home/vscode/gaze_ws/L2CS-Net/trained_model.csv") 
+action_df = pd.read_csv("/home/vscode/gaze_ws/L2CS-Net/other/trained_model.csv") 
 
 def select_action(goal_id, gaze_state):
     # Filter the DataFrame for the matching row
