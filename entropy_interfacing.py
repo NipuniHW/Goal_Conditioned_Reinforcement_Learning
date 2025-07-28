@@ -542,13 +542,13 @@ class GazeInterfaceController:
         
         
 if __name__=="__main__":
-    controller = GazeInterfaceController(camera_id=2)
+    controller = GazeInterfaceController(camera_id=0)
     controller.calibration_exe()
     controller.start_detecting_attention()
     
     start_time = time()
-    duration = 5 * 60  # 3 minutes in seconds
-    interval = 5  # Interval in seconds
+    duration = 10 * 60  # 3 minutes in seconds
+    interval = 3  # Interval in seconds
     next_print_time = start_time + interval
     try:
         

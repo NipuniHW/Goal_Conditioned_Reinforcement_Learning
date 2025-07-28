@@ -3,24 +3,24 @@ Goal ID: 1 | Epsilon: 0.0997
 
 
 --- Gaze State: Low (value=0) ---
-  Rank 1: Action 59 | Deltas(head=+1, nav=-1, gesture=+0, volume=+1) | Q-value: 3902.518
-  Rank 2: Action 32 | Deltas(head=+0, nav=-1, gesture=+0, volume=+1) | Q-value: 3749.466
-  Rank 3: Action 53 | Deltas(head=+0, nav=+1, gesture=+1, volume=+1) | Q-value: 3720.998
-  Rank 4: Action 52 | Deltas(head=+0, nav=+1, gesture=+1, volume=+0) | Q-value: 3689.742
-  Rank 5: Action 78 | Deltas(head=+1, nav=+1, gesture=+1, volume=-1) | Q-value: 3675.885
+  Rank 1: Action 44 | Deltas(head=+0, nav=+0, gesture=+1, volume=+1) | Q-value: 29.407
+  Rank 2: Action 26 | Deltas(head=-1, nav=+1, gesture=+1, volume=+1) | Q-value: 10.009
+  Rank 3: Action 78 | Deltas(head=+1, nav=+1, gesture=+1, volume=-1) | Q-value: 8.977
+  Rank 4: Action 0 | Deltas(head=-1, nav=-1, gesture=-1, volume=-1) | Q-value: 8.968
+  Rank 5: Action 47 | Deltas(head=+0, nav=+1, gesture=-1, volume=+1) | Q-value: 7.901
 
 --- Gaze State: Medium (value=1) ---
-  Rank 1: Action 14 | Deltas(head=-1, nav=+0, gesture=+0, volume=+1) | Q-value: 4956.241
-  Rank 2: Action 59 | Deltas(head=+1, nav=-1, gesture=+0, volume=+1) | Q-value: 4937.804
-  Rank 3: Action 52 | Deltas(head=+0, nav=+1, gesture=+1, volume=+0) | Q-value: 4937.205
-  Rank 4: Action 19 | Deltas(head=-1, nav=+1, gesture=-1, volume=+0) | Q-value: 4889.530
-  Rank 5: Action 16 | Deltas(head=-1, nav=+0, gesture=+1, volume=+0) | Q-value: 4857.184
+  Rank 1: Action 44 | Deltas(head=+0, nav=+0, gesture=+1, volume=+1) | Q-value: 23.201
+  Rank 2: Action 26 | Deltas(head=-1, nav=+1, gesture=+1, volume=+1) | Q-value: 9.387
+  Rank 3: Action 78 | Deltas(head=+1, nav=+1, gesture=+1, volume=-1) | Q-value: 7.570
+  Rank 4: Action 32 | Deltas(head=+0, nav=-1, gesture=+0, volume=+1) | Q-value: 6.339
+  Rank 5: Action 54 | Deltas(head=+1, nav=-1, gesture=-1, volume=-1) | Q-value: 5.668
 
 --- Gaze State: High (value=2) ---
-  Rank 1: Action 53 | Deltas(head=+0, nav=+1, gesture=+1, volume=+1) | Q-value: 5719.656
-  Rank 2: Action 59 | Deltas(head=+1, nav=-1, gesture=+0, volume=+1) | Q-value: 5676.625
-  Rank 3: Action 14 | Deltas(head=-1, nav=+0, gesture=+0, volume=+1) | Q-value: 5664.272
-  Rank 4: Action 34 | Deltas(head=+0, nav=-1, gesture=+1, volume=+0) | Q-value: 5525.125
-  Rank 5: Action 19 | Deltas(head=-1, nav=+1, gesture=-1, volume=+0) | Q-value: 5507.953
+  Rank 1: Action 44 | Deltas(head=+0, nav=+0, gesture=+1, volume=+1) | Q-value: 24.259
+  Rank 2: Action 26 | Deltas(head=-1, nav=+1, gesture=+1, volume=+1) | Q-value: 7.313
+  Rank 3: Action 0 | Deltas(head=-1, nav=-1, gesture=-1, volume=-1) | Q-value: 6.331
+  Rank 4: Action 78 | Deltas(head=+1, nav=+1, gesture=+1, volume=-1) | Q-value: 5.751
+  Rank 5: Action 47 | Deltas(head=+0, nav=+1, gesture=-1, volume=+1) | Q-value: 5.123
 
 =====================================

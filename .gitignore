@@ -140,3 +140,4 @@ dmypy.json
 # Ignore other files
 my.secrets
 L2CSNet_gaze360.pkl
+saved_data

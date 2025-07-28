@@ -227,7 +227,7 @@ class Pepper:
         print(f"Navigation: {nav}, Gesture: {gesture}, Head_Movement: {head_m}, Volume: {volume}")
         
         # Perform the action
-        # self.execute_action(nav, gesture, head_m, volume)
+        self.execute_action(nav, gesture, head_m, volume)
         
         return head_m, nav, gesture, volume
         

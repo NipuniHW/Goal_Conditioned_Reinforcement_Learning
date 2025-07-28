@@ -22,7 +22,7 @@ from configurations import _load_config, _init_spaces, _init_networks, _init_tra
 from pepper import Pepper
 from entropy_interfacing import GazeInterfaceController
 from configurations import *
-from train_saving_functions import save_trajectory_ep_to_yaml # type: ignore
+# from train_saving_functions import save_trajectory_ep_to_yaml # type: ignore
 from reward_function import calculate_reward 
 
 class PepperGazeGCRL:

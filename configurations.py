@@ -1,6 +1,5 @@
 #!/usr/bin/python3.10
 
-# Class constants
 from collections import deque
 from typing import Dict, Optional
 import numpy as np
@@ -43,11 +42,7 @@ def _init_spaces(self):
     """Initialize state and action spaces."""
     # Current Pepper state
     self.current_pepper_state = {
-        'gaze': 0,           # Current gaze level (0-2)
-        'head_position': 0,  # 0-4 (0=down, 1=left, 2=center, 3=right, 4=up)
-        'navigation': 0,     # 0-4 (0=back more, 1=back, 2=still, 3=closer, 4=much closer)
-        'gesture_level': 0,  # 0-10 (gesture intensity)
-        'volume_level': 0    # 0-10 (volume level)
+        'gaze': 0         # Current gaze level (0-2)
     }
     
     # Generate delta actions: each parameter can change by -1, 0, or +1
@@ -60,7 +55,7 @@ def _init_spaces(self):
     ]
     
     # Define dimensions
-    self.state_dim = 5  # [gaze, head_pos, nav_pos, gesture_level, volume_level]
+    self.state_dim = 1  # [gaze, head_pos, nav_pos, gesture_level, volume_level]
     self.action_dim = len(self.delta_actions)  # 3^4 = 81 actions
     self.goal_dim = 3   # One-hot encoding for 3 gaze levels
 

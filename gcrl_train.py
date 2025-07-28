@@ -1,4 +1,4 @@
-# !/usr/bin/python3.10
+#!/usr/bin/python3.10
 
 import argparse
 from copy import deepcopy
@@ -25,21 +25,21 @@ from train_saving_functions import *
 from visualizations import *
 
 class GazeGCRL:
-    """
-    Goal-Conditioned Reinforcement Learning for Pepper Robot Gaze Control
+    # """
+    # Goal-Conditioned Reinforcement Learning for Pepper Robot Gaze Control
     
-    This system uses delta-based actions to control Pepper's behavior and 
-    optimize human gaze levels for different target ranges:
-    - Low gaze: 0-33 (goal_id=0)
-    - Medium gaze: 34-66 (goal_id=1) 
-    - High gaze: 67-100 (goal_id=2)
+    # This system uses delta-based actions to control Pepper's behavior and 
+    # optimize human gaze levels for different target ranges:
+    # - Low gaze: 0-33 (goal_id=0)
+    # - Medium gaze: 34-66 (goal_id=1) 
+    # - High gaze: 67-100 (goal_id=2)
     
-    State space: Only gaze level (0=low, 1=medium, 2=high)
-    Action space: Delta changes for head, navigation, gesture, volume
-    """
+    # State space: Only gaze level (0=low, 1=medium, 2=high)
+    # Action space: Delta changes for head, navigation, gesture, volume
+    # """
     
     def __init__(self, config: Optional[Dict] = None):
-        """Initialize the GCRL system with configurable parameters."""
+        # """Initialize the GCRL system with configurable parameters."""
 
         # Load configuration - provide default config if none given
         if config is None:
@@ -192,15 +192,16 @@ class GazeGCRL:
         self.current_state = new_state
         return new_state
 
-    def select_action(self, state: Dict, goal_id: int, training: bool = True) -> Tuple[int, int, int, int, int]:
+    def select_action(self, state: Dict, goal_id: int, training: bool = False) -> Tuple[int, int, int, int, int]:
         """Select action using epsilon-greedy policy."""
-        if training and random.random() < self.epsilon:
-            action_id = random.randint(0, self.action_dim - 1)
-        else:
-            with torch.no_grad():
-                input_tensor = self._create_network_input(state, goal_id)
-                q_values = self.policy_net(input_tensor)
-                action_id = q_values.argmax().item()
+        # if training and random.random() < self.epsilon:
+        #     # action_id = 40
+        #     action_id = random.randint(0, self.action_dim - 1)
+        # else:
+        with torch.no_grad():
+            input_tensor = self._create_network_input(state, goal_id)
+            q_values = self.policy_net(input_tensor)
+            action_id = q_values.argmax().item()
         
         delta_head, delta_nav, delta_gesture, delta_volume = self.delta_actions[action_id]
 
@@ -451,19 +452,15 @@ class GazeGCRL:
 
     # def load_model(self, filepath: str):
     #     """Load a trained model."""
-    #     checkpoint = torch.load(filepath)
-    #     self.policy_net.load_state_dict(checkpoint['policy_net_state_dict'])
-    #     self.target_net.load_state_dict(checkpoint['target_net_state_dict'])
-    #     self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-    #     self.epsilon = checkpoint['epsilon']
-    #     self.step_count = checkpoint['step_count']
-    #     self.episode_count = checkpoint['episode_count']
-    #     self.config = checkpoint['config']
+    #     self.policy_net = torch.load(filepath)
+    #     self.target_net = deepcopy(self.policy_net)
+    #     self.epsilon = 0.0  # default to exploitation during testing
+    #     print("Model loaded successfully.")
+
 
     def load_model(self, filepath: str):
         """Load a trained model."""
         checkpoint = torch.load(filepath)
-        
         self.policy_net.load_state_dict(checkpoint['policy_net_state_dict'])
         self.target_net.load_state_dict(checkpoint['target_net_state_dict'])
         self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
@@ -471,8 +468,20 @@ class GazeGCRL:
         self.step_count = checkpoint['step_count']
         self.episode_count = checkpoint['episode_count']
         self.config = checkpoint['config']
+    
+    # def load_model(self, filepath: str):
+    #     """Load a trained model."""
+    #     checkpoint = torch.load(filepath)
         
-        print(f"Model loaded from {filepath}")
+    #     self.policy_net.load_state_dict(checkpoint['policy_net_state_dict'])
+    #     self.target_net.load_state_dict(checkpoint['target_net_state_dict'])
+    #     self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+    #     self.epsilon = checkpoint['epsilon']
+    #     self.step_count = checkpoint['step_count']
+    #     self.episode_count = checkpoint['episode_count']
+    #     self.config = checkpoint['config']
+        
+    #     print(f"Model loaded from {filepath}")
 
     def save_training_data(self, filepath: str):
         """Save training data to JSON."""
@@ -618,7 +627,7 @@ def save_training_state_after_episode(gcrl_model, episode_count: int, training_r
     print(f"Saved training state after episode {episode_count}")
 
 if __name__ == "__main__":
-    goal_id = 2
+    goal_id = 1
     training_runname = 'low_training_data'
     online_episode_duration = 5  # in minutes
     load_training_dir = True  # Set to True if you want to load existing training data
